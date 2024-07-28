@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/ppp"
+    tools:ignore="ExtraText">
 
 
     <EditText
         android:id="@+id/editWeight"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="404dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="52dp"
         android:hint="Enter Weight (kg)"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,10 +22,10 @@
 
     <EditText
         android:id="@+id/editHeight"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="Enter Height (m)"
+        android:layout_width="404dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Height (in meters)"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,8 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="508dp"
-        android:text="Calculate_BMI"
+        android:layout_marginBottom="400dp"
+        android:text="Calculate BMI"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +47,16 @@
 
     <TextView
         android:id="@+id/resultTextView"
-        android:layout_width="45dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="308dp"
+        android:layout_width="129dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="184dp"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculateButton" />
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton"
+        app:layout_constraintVertical_bias="0.623" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
